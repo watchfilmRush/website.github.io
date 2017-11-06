@@ -1,0 +1,31 @@
+{
+    "location": "London",
+    "metric": false,
+    "meridiem": true,
+    "searchEngine": "http://steamcommunity.com/search/users/#text=",
+    "colors": [
+        "#E37073",
+        "#DC8C6C",
+        "#E5C078",
+        "#ECE389",
+        "#95B47B",
+        "#9CCC9C",
+        "#8CD0D3",
+        "#89AEE0",
+        "#8C8CBC",
+        "#BC8CBC"
+    ],
+    "websites": [
+        ["TopHat","http://steamcommunity.com/id/bochazza"],
+        ["Jupp","http://steamcommunity.com/id/ImJupp/"],
+        ["DaveMustaine","http://steamcommunity.com/id/ScadentiOrazio"],
+        ["Floki","http://steamcommunity.com/id/Sboromir"],
+        ["Sterben","http://steamcommunity.com/profiles/76561198158821756"],
+        ["PhantomSniper", "http://steamcommunity.com/id/PhantomSniperIT"],
+        ["Alemic", "http://steamcommunity.com/profiles/76561198095762610"],
+        ["X7black", "http://steamcommunity.com/id/X7blackone"]
+    ],
+    "id": [
+        ["fr3.ts3x.cx:11167"]
+    ]
+}

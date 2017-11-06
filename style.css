@@ -1,0 +1,178 @@
+
+/*    Default CSS     */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background: #FFFFFF;
+    font-family: Roboto;
+}
+    #clock {
+        margin: 25vh auto 4vh;
+        width: 100%;
+        font-family: Roboto;
+        font-size: 5.5rem;
+    }
+    #input,
+    .prediction {
+        height: 2.2rem;
+        line-height: 2.2rem;
+        padding: 0 .2rem;
+        background: #424242;
+        color: #FFF;
+        width: 40vw;
+    }
+    #input {
+        font-family: Roboto;
+        margin: 0 -2.2rem;
+        border: 0;
+        font-size: 1.6rem;
+    }
+        :focus {
+             outline: 0;
+        }
+    .prediction {
+        font-size: 1.4rem;
+        margin: 0 auto;
+        display: block;
+        text-decoration: none;
+        -webkit-transition: background .3s ease;
+        transition: background .3s ease;
+        text-transform: uppercase;
+    }
+        .prediction:hover {
+            cursor: pointer;
+            background: #FFFFFF;
+        }
+    #search {
+        position: absolute;
+        display: inline-block;
+        width: 2.2rem;
+        height: 2.2rem;
+        cursor: pointer;
+    }
+        #search svg {
+            width: 1.7rem;
+            margin: .25rem .2rem;
+            -webkit-transition: transform .3s ease;
+            transition: transform .3s ease;
+            fill: #424242;
+        }
+            #search svg:hover {
+                transform: rotate(90deg);
+            }
+    #weather {
+        background: #424242;
+        margin: 2vh auto;
+        width: 40vw;
+        padding: 0 .2rem;
+        cursor: pointer;
+    }
+        #weather div {
+            width: 33%;
+            min-height: 2.2rem;
+            font-size: 1.4rem;
+            color: white;
+            display: inline-block;
+        }
+        #weather div:nth-child(2)::first-letter {
+            text-transform: uppercase;
+        }
+    #all {
+        margin: 2vh auto;
+        width: 40vw;
+        padding: 0 .2rem;
+        background: #424242;
+    }
+        #all a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: .5rem 1rem;
+            font-size: 1.4rem;
+            -webkit-transition: background .3s ease;
+            transition: background .3s ease;
+        }
+            #all a:hover {
+                background: #303030;
+            }
+    #calculator {
+        width: calc(15rem + 4vh);
+        margin: 2vh auto;
+        display: none;
+    }
+        #calculator > div {
+            background: #424242;
+            display: inline-block;
+        }
+            #calculator > div > div {
+                float: right;
+                width: 3rem;
+                padding: .2rem 0;
+                color: white;
+                font-size: 1.8rem;
+                cursor: pointer;
+                -webkit-transition: background .3s ease;
+                transition: background .3s ease;
+            }
+                #calculator > div > div:hover {
+                    background: #303030;
+                }
+                #calculator > div > div:nth-child(3) {
+                    float: left;
+                }
+        #calculator > div:first-child {
+            float: left;
+            width: 3rem;
+        }
+        #calculator > div:nth-child(2) {
+            width: 9rem;
+        }
+            #calculator > div:nth-child(2) #calc::after {
+                content: '=';
+            }
+        #calculator > div:last-child {
+            float: right;
+            width: 3rem;
+        }
+
+@media screen and (max-width: 800px) {
+    #input,
+    .prediction,
+    #weather,
+    #all {
+        width: 80vw;
+    }
+        #weather div {
+            display: block;
+            width: 100%;
+        }
+}
+
+/*    Material Properties     */
+
+
+#input,
+#weather,
+#all,
+#calculator > div {
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+#search {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.prediction {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px -5px rgba(0, 0, 0, 0.12);
+}
+.prediction:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
